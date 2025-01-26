@@ -8,7 +8,7 @@ typedef struct {
     int pontosTuristicos;
 } Carta;
 
-#define NUM_CARTAS 32
+#define NumeroDeCartas 32
 
 void lerDadosCarta(Carta *carta, int indice) {
     printf("\n---- Cadastro da Carta %d ----\n", indice + 1);
@@ -47,11 +47,11 @@ void exibirCartas(const Carta cartas[], int tamanho) {
 }
 
 int main() {
-    Carta cartas[NUM_CARTAS];
+    Carta cartas[NumeroDeCartas];
 
     printf("Bem-vindo ao cadastro do Super Trunfo - Países!\n");
 
-    cadastrarCartas(cartas, NUM_CARTAS);
-    exibirCartas(cartas, NUM_CARTAS);
+    cadastrarCartas(cartas, NumeroDeCartas);
+    exibirCartas(cartas, NumeroDeCartas);
 
     return 0;
